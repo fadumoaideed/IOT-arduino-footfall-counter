@@ -10,9 +10,9 @@ rgb_lcd LCD;
 WiFiUDP UDP;
 unsigned int localUDPport = 8888;  // local port to listen on
 char incomingPacket[255];  // buffer for incoming packets
-char  replyPacket[] = "Board's IP is 192.168.0.92";  // a reply string to send back
-const char ssid[] = "SKY666E5";
-const char password[] = "SAHRA1996";
+char  replyPacket[] = "Board's IP is .....";  // a reply string to send back
+const char ssid[] = " ";
+const char password[] = "";
 const char domainname[] = "fadum";
 ESP8266WebServer SERVER(80);
 
@@ -32,7 +32,7 @@ const char SUID[] = "ENTRANCE";
 #define ADASERVER     "io.adafruit.com"     // do not change this
 #define ADAPORT       8883                  // do not change this 
 #define ADAUSERNAME   "fadumoaideed"               // ADD YOUR username here between the qoutation marks
-#define ADAKEY        "aio_gxpe17wUJTcih4yOdL6TK38hPfgY" // ADD YOUR Adafruit key here betwwen marks
+#define ADAKEY        " " // ADD YOUR Adafruit key here betwwen marks
 
 /******************************** Global instances / variables***************************************
  *  
@@ -53,7 +53,7 @@ Adafruit_MQTT_Subscribe FOOTFALL_RESET = Adafruit_MQTT_Subscribe(&MQTT, ADAUSERN
 Adafruit_MQTT_Publish FOOTFALL = Adafruit_MQTT_Publish(&MQTT, ADAUSERNAME "/feeds/footfall");
 Adafruit_MQTT_Publish AVFOOTFALL = Adafruit_MQTT_Publish(&MQTT, ADAUSERNAME "/feeds/avfootfall");
 Adafruit_MQTT_Publish SENSORUID = Adafruit_MQTT_Publish(&MQTT, ADAUSERNAME "/feeds/sensoruid");
-static const char *fingerprint PROGMEM = "77 00 54 2D DA E7 D8 03 27 31 23 99 EB 27 DB CB A5 4C 57 18";
+static const char *fingerprint PROGMEM = " ";
 
 /********************************** Main*************************************************************
  *  
